@@ -1,9 +1,9 @@
 - 👋 Hi, I’m @denishkarnati
 - 👀 I’m interested in ...programming were i was trying to indulge in it.
-- 🌱 I’m currently learning ...C++ and Python
+- 🌱 I’m currently learning ..AI/ML 
 - 💞️ I’m looking to collaborate on ...whose willing to learn/teach.
 - 📫 How to reach me ...dm me.
-- 😄 Pronouns: ...
+- 😄 Pronouns: ...DEEEniish
 - ⚡ Fun fact: ...The only way to get code done by shutting down the windows;)
 
 <!---
