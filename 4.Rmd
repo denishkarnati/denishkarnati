@@ -1,6 +1,5 @@
 #Dinesh Karnati 
-#GR019909
-#Week-2
+
 # 4
 #understanding LOOCV with knn classifier
 ## Applying LOO for evaluating the performance of a knn classifier on diabetesTask.This calculates the performance matrices, confusion matrix, model accuracy and error rates when trained using LOOCV
