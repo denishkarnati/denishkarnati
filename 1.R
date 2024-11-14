@@ -1,6 +1,5 @@
 #Dinesh Karnati 
-#GR019909
-#Week-2 
+
 
 # Scatter plot with different shapes for classes
 ##The below code initializes ggplot using diabetesTib dataframe, where glucose on x-axis and insulin on y axis and display different shapes based on class variable geom_point to add points & theme_bw to add black and white theme for better visibility
