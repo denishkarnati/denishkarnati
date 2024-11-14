@@ -1,6 +1,5 @@
 #Dinesh Karnati 
-#GR019909
-#Week-2
+
 # 7
 # Cross validation with hyperparametric tuning
 ## Perform cross validation with hyperparameter tuning using knn model wrapper.The resampling descriptor(outerKfold) specifies the cross-validation setting resample function executes the resampling process to evaluate the models performance. The output provides models performance metrics.
