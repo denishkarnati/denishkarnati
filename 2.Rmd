@@ -1,5 +1,5 @@
 #Dinesh Karnati 
-#GR019909
+
 #Week-2
 # 2
 ##makeResampleDesc() is used to define how the data should be split for training and testing during model evaluation. In the below code the data is randomly selected for training and rest of the data for testing 0.9 means 90% of data for training and 10% for testing
