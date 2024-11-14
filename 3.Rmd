@@ -1,0 +1,29 @@
+#Dinesh Karnati 
+#GR019909
+#Week-2
+# 3
+##Resampling method as repeated cross-validation. There were 3 subsets(folds) Each fold has 1/3 of the data, reps = 500 specifies the no of iterations.  Evaluates knn learner on the diabetesTask and also computing performance measures (mean misclassification error and accuracy)
+library(mlr)           # Load the 'mlr' package for machine learning tasks.
+library(tidyverse)     # Load the 'tidyverse' package for data manipulation and visualization.
+
+# Repetitive Cross-Validation with 500 repetitions
+kFold500 <- makeResampleDesc(method = "RepCV", folds = 3, reps = 500, 
+                             stratify = TRUE)
+
+kFoldCV500 <- resample(learner = knn, task = diabetesTask, 
+                       resampling = kFold500, measures = list(mmce, acc))
+
+# Repetitive Cross-Validation with 5 repetitions
+kFold5 <- makeResampleDesc(method = "RepCV", folds = 3, reps = 5, 
+                           stratify = TRUE)
+
+kFoldCV5 <- resample(learner = knn, task = diabetesTask, 
+                     resampling = kFold5, measures = list(mmce, acc))
+                     
+#aggregated performance metrics for kFold500
+kFoldCV500$aggr
+
+#aggregated performance metrics for kFold5
+kFoldCV5$aggr 
+
+calculateConfusionMatrix(kFoldCV$pred, relative = TRUE)

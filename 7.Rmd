@@ -1,0 +1,33 @@
+#Dinesh Karnati 
+#GR019909
+#Week-2
+# 7
+# Cross validation with hyperparametric tuning
+## Perform cross validation with hyperparameter tuning using knn model wrapper.The resampling descriptor(outerKfold) specifies the cross-validation setting resample function executes the resampling process to evaluate the models performance. The output provides models performance metrics.
+outerKfold <- makeResampleDesc("CV", iters = 5, stratify = TRUE)
+
+# Perform resampling with outer cross-validation
+kFoldCVWithTuning <- resample(knnWrapper, irisTask, 
+                              resampling = outerKfold)
+
+kFoldCVWithTuning
+
+resample(knnWrapper, irisTask, resampling = outerKfold)
+
+# repeat each validation procedure 10 times and save the mmce value 
+# WARNING: this may take a few minutes to complete
+
+kSamples <- map_dbl(1:10, ~resample(
+  knnWrapper, irisTask, resampling = outerKfold)$aggr
+)
+
+hSamples <- map_dbl(1:10, ~resample(
+  knnWrapper, irisTask, resampling = outerHoldout)$aggr
+)
+# Plot histogram of MMCE values for outer cross-validation
+
+hist(kSamples, xlim = c(0, 0.11))
+# Plot histogram of MMCE values for holdout validation
+hist(hSamples, xlim = c(0, 0.11))
+
+# holdout CV gives more variable estimates of model performance 

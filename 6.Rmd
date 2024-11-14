@@ -1,0 +1,20 @@
+#Dinesh Karnati 
+#GR019909
+#Week-2
+# 6
+#Holdout Validation with Hyperparameter Tuning
+##Apply Holdout validation with hyperparameter tuning to optimize a knn classifier(classif.knn) using irisTask(iris dataset). The tuning wrapper(knnWrapper)encapsulates the resampling strategy, parameter set, control grid for efficiently tuning the models hyperparameters and improving its predictive performance
+inner <- makeResampleDesc("CV") 
+# Inner resampling strategy (Cross-Validation)
+
+outerHoldout <- makeResampleDesc("Holdout", split = 2/3, stratify = TRUE)
+# Outer resampling strategy (Holdout)
+
+knnWrapper <- makeTuneWrapper("classif.knn", resampling = inner, 
+                              par.set = knnParamSpace, 
+                              control = gridSearch) 
+# Perform resampling with holdout validation
+holdoutCVWithTuning <- resample(knnWrapper, irisTask, 
+                                resampling = outerHoldout)
+
+holdoutCVWithTuning

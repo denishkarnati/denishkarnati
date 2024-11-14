@@ -1,0 +1,22 @@
+#Dinesh Karnati 
+#GR019909
+#Week-2
+# 4
+#understanding LOOCV with knn classifier
+## Applying LOO for evaluating the performance of a knn classifier on diabetesTask.This calculates the performance matrices, confusion matrix, model accuracy and error rates when trained using LOOCV
+LOO <- makeResampleDesc(method = "LOO")
+
+# Use LOO for resampling without stratification
+LOOCV <- resample(learner = knn, task = diabetesTask, resampling = LOO,
+                  measures = list(mmce, acc))
+
+LOOCV$aggr
+
+calculateConfusionMatrix(LOOCV$pred, relative = TRUE)
+
+#makeResampleDesc(method = "LOO", stratify = TRUE)
+
+#makeResampleDesc(method = "LOO", reps = 5)
+
+# both will result in an error as LOO cross-validation cannot
+# be stratified or repeated
