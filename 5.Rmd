@@ -1,6 +1,5 @@
 #Dinesh Karnati 
-#GR019909
-#Week-2
+
 # 5
 #Performs hyperparameter tuning for KNN classifier on Iris dataset.
 #Tuning hyperparameters of knn classifier (classif.knn) Using cross-validation resampling and grid search, with a focus on optimizing the k parameter for model accuracy
