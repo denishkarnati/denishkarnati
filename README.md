@@ -1,17 +1,7 @@
-<h1 align="center">Hi 👋, I'm Denish Karnati</h1>
-<h3 align="center">🚀 A passionate Software Developer, UI Designer, and Data Analyst I’m passionate about leveraging Artificial Intelligence (AI) and Machine Learning (ML) to solve real-world problems. I love crafting intuitive user interfaces, building scalable applications, and analyzing data for impactful insights.</h3>
-
-- 🔭 I’m currently working on [Reality AI lab](https://github.com/marvelai-org)
-
-- 🌱 I’m currently learning **📚 Generative AI, Deep Learning, and Advanced ML techniques 🖥 New frameworks & cloud computing**
-
-- 👯 I’m looking to collaborate on **AI-powered applications, interactive UI projects, and open-source contributions.**
-
-- 👨‍💻 All of my projects are available at [https://sdkarnati.my.canva.site/](https://sdkarnati.my.canva.site/)
 
 - 📝 I regularly write articles on [https://medium.com/@denishkarnati99](https://medium.com/@denishkarnati99)
 
-- 💬 Ask me about **✨ Exploring Generative AI & LLMs 🤖✨ Building Data-Driven Web Applications 🌐✨ Creating Interactive Dashboards & Visualizations 📊✨ Developing Smart UI/UX Designs 🎨✨ Contributing to Open Source & AI Research 📖**
+-
 
 - ⚡ Fun fact **I believe I am funny, but my code still refuses to laugh at my jokes. 😂**
 
